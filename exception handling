@@ -1,0 +1,430 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dc8fac27-654f-4196-9480-ce8e6dd763be",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "EXCEPTION HANDLING ASSINMENT"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e7aa6930-75d5-43b9-9d43-2c5c68af4b48",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'An event which occurs during the execution of a program that disrupts the normal flow of tha programs instructions\\nan error is bug in ths code that cause irregular output or stops the programs from executing whereas an exception is an irregular \\nunexcepted situation occuring during execution on which programmer has no control'"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#ANSWER 1:\n",
+    "\"\"\"An event which occurs during the execution of a program that disrupts the normal flow of tha programs instructions\n",
+    "an error is bug in ths code that cause irregular output or stops the programs from executing whereas an exception is an irregular \n",
+    "unexcepted situation occuring during execution on which programmer has no control\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "61d86f83-1150-4985-86a1-d3a1aedf352d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'THEN syntax is valid'"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# ANSWER 2:\n",
+    "\"\"\"THEN syntax is valid\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "cd858ba3-5371-46fc-974e-5a1908392226",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "try:\n",
+    "    f=open(\"test.txt\",'w')\n",
+    "    f.write(\"this is my writen into the file\")\n",
+    "except Exception as e:\n",
+    "    print(\"this is my exception\",e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "58c47caa-dbb3-417b-93fd-5cece7e2ecc7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' the try and except block in python is used to catch and handle exception'"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# ANSWER 3:\n",
+    "\"\"\" the try and except block in python is used to catch and handle exception\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "66b63005-0fb1-41e2-95bc-38ff9dd587f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this is my exception [Errno 2] No such file or directory: 'test1.txt'\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    f=open(\"test1.txt\",'r')\n",
+    "    f.write(\"this is my print\")\n",
+    "except Exception as e:\n",
+    "    print (\"this is my exception\",e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "50440a65-b0be-4a99-9f74-f9f1795cd7b2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ANSWER .4:\n",
+    "# A TRY AND ELSE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bd3b3de0-7652-44da-989b-c0ebe3c7bfef",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "268cef79-0186-447b-80dc-404dda9b9cd4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this will excute once your try will execute without error\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    f=open(\"test1.txt\",'w')\n",
+    "    f.write(\"this is my print\")\n",
+    "except Exception as e:\n",
+    "    print (\"this is my exception\",e)\n",
+    "else:\n",
+    "    f.close()\n",
+    "    print(\"this will excute once your try will execute without error\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "d0f473ad-038a-4218-8011-2690633590e0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a6f9764c-a417-4391-92e7-18ff2f701008",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "f93a57b4-78f0-4eb4-9f5e-5b8019b8d4f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this is my exception not writable\n",
+      "finally will execute itself in any situation\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    f=open(\"test1.txt\",'r')\n",
+    "    f.write(\"this is my print\")\n",
+    "except Exception as e:\n",
+    "    print (\"this is my exception\",e)\n",
+    "finally:\n",
+    "    print(\"finally will execute itself in any situation\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2ac52996-9fa6-4105-bdae-2f312c48c1c3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bb508e2c-75be-4b01-84e9-6289570266bc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65bc4b73-0575-4d30-b455-fa0f0623788b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "7f01315a-cf7e-4669-9dbb-77658a0d9721",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' tailored to your spcific use cases and that you can raise and catch in specific circumtance\\nadd imfomation about project related problem'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# ANSWER 5:\n",
+    "\"\"\" tailored to your spcific use cases and that you can raise and catch in specific circumtance\n",
+    "add imfomation about project related problem\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "0897eb39-f605-4b62-a0f4-98047ba80055",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class validage(Exception):\n",
+    "    def __init__(self,msg):\n",
+    "        self.msg=msg"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "84794978-59e2-4e13-848d-b458042e04a4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def validatage(age):\n",
+    "    if age<0:\n",
+    "        raise validage(\"entered age is negative\")\n",
+    "    elif age>220:\n",
+    "        raise validage(\"entered age is very high\")\n",
+    "    else:\n",
+    "        print(\"age is valid\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "0e8937cd-76b9-4465-86f1-bc9398976b2d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your age 19\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "age is valid\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    age=int(input(\"enter your age\"))\n",
+    "    validatage(age)\n",
+    "except validage as e:\n",
+    "    print(e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "2dc6fb6f-36df-4108-aa09-099c29032d8e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ANSWER 6:\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0eed7b85-657a-4053-ab22-cc8824f60b7f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "3dccaa95-16d8-4f0e-a04d-e883e26c5377",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class validage(Exception):\n",
+    "    def __init__(self,msg):\n",
+    "        self.msg=msg"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f6da1c6f-7593-49ea-83c4-b73db041c99f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "6d4cf037-bd22-42d5-8f6c-ce9ad15b0f99",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def validatage(age):\n",
+    "    if age<0:\n",
+    "        raise validage(\"entered age is negative\")\n",
+    "    elif age>220:\n",
+    "        raise validage(\"entered age is very high\")\n",
+    "    else:\n",
+    "        print(\"age is valid\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "730f7858-592d-4530-9e62-8241e18f7053",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "410c1e7d-e5db-4d43-984f-53aab26db03a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your age 300\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "entered age is very high\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    age=int(input(\"enter your age\"))\n",
+    "    validatage(age)\n",
+    "except validage as e:\n",
+    "    print(e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "327a7906-e554-44e2-8af1-1d6719e2bce8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
